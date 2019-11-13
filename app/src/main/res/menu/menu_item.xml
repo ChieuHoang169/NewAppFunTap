@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/folder"
+        android:icon="@drawable/foldericon"
+        android:title="@string/folders" />
+
+    <item
+        android:id="@+id/notes"
+        android:icon="@drawable/notesicon"
+        android:title="@string/notes"
+        />
+    <item
+        android:id="@+id/todo"
+        android:icon="@drawable/path85"
+        android:title="@string/to_do"
+        />
+    <item
+        android:id="@+id/calendar"
+        android:icon="@drawable/union"
+        android:title="@string/calendar"
+        />
+
+</menu>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/navigation_button"
+        android:background="@drawable/background"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:alpha="90"
+        android:background="@color/colorstrat"
+        android:isScrollContainer="false"
+        android:scrollbarSize="10dp"
+        app:elevation="8dp"
+        app:itemIconSize="20dp"
+        app:itemIconTint="@color/colortext"
+        app:itemTextColor="@color/colortext"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintTop_toBottomOf="@+id/nav_host_fragment"
+        app:menu="@menu/menu_item"
+        tools:layout_editor_absoluteX="0dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginLeft="185dp"
+            android:layout_marginTop="6dp"
+            android:clickable="true"
+            app:backgroundTint="@color/colorstrat"
+            app:fabSize="mini"
+            app:maxImageSize="35dp"
+            app:srcCompat="@drawable/group287" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

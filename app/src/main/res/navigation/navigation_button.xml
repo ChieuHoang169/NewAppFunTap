@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_button"
+    app:startDestination="@id/foldresFragment">
+
+    <fragment
+        android:id="@+id/foldresFragment"
+        android:name="com.example.fun_tap.foldres.FoldresFragment"
+        android:label="fragment_foldres"
+        tools:layout="@layout/fragment_foldres" />
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.example.fun_tap.notes.NotesFragment"
+        android:label="fragment_notes"
+        tools:layout="@layout/fragment_notes" />
+    <fragment
+        android:id="@+id/to_DoFragment"
+        android:name="com.example.fun_tap.todo.To_DoFragment"
+        android:label="fragment_to__do"
+        tools:layout="@layout/fragment_to__do" />
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.fun_tap.calendar.CalendarFragment"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" />
+</navigation>
